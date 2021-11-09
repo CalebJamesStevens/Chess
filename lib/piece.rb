@@ -15,5 +15,3 @@ class Piece
 
 
 end
-
-puts Piece.new('green', 'k')
