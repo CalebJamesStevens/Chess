@@ -2,25 +2,18 @@ require 'colorize'
 class Piece
     attr_accessor :color, :piece_type
 
-    piece_symbols = ['K', 'Q', 'R', 'H', 'B', 'P']
+
 
     def initialize(color, piece_type)
         @color = color
-        @piece_type = piece_type
-        #case @piece_type.downcase
-        #when 'king'
-        #    
-        #when 
-        #    
-        #else
-        #    
-        #end
+        @piece_type = piece_type.downcase
     end
 
     def to_s
-        puts 
+        puts @piece_type.to_s.send(@color)
     end
 
 
 end
 
+puts Piece.new('green', 'k')
